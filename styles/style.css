@@ -6,6 +6,9 @@ Green: #00B172
 White: #FFF
 
 */
+body{
+    font-family: sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +21,7 @@ White: #FFF
     float: left;
 }
 nav ul{
+    font-family: sans-serif;
     display: flex;
     padding: 0.5rem;
     margin: 5px;
@@ -29,6 +33,7 @@ nav ul{
     list-style: none;
 }
 .hero-image{
+    font-family: sans-serif;
     width: 98vw;
     height: 100vh;
     background-image: url(/images/landing.jpg);
@@ -47,68 +52,86 @@ nav ul{
     justify-content: center;
     float: center;
 }
-section span{
+.section-title span{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
 }
 .divs0{
     display: flex;
-    align-items: space-between;
+    padding: 0.5rem;
     justify-content: center;
-    flex-direction: column;
-    gap: 0rem;
-    flex-wrap: nowrap;
-}
-.divs0 :first-child{
-    font-size: xx-large;
-    font-weight: bold;
-    text-decoration:underline;
-}
-.title{
-        font-weight:bold;
-        font-size: medium;
+    align-items: baseline;
+    flex-direction: row;
+    width: 100%;
+    justify-self: center;
 }
 .divs1{
-    padding: 5%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: center;
     float: left;
-    
 }
 .divs2{
-    padding: 5%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 1rem;
-    float: center;
-    
+    justify-content: center;
+    float: center ;
 }.divs3{
-    padding: 5%;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-   float:right;
+    float: right;
 }
-section {
-    width: 100%;
+section .section-title{
     display: flex;
-    align-items: space-between;
-    justify-content: space-around;
     flex-direction: column;
-
-    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: center ;
+    font-weight: bold;
+    font-size: xx-large;
+    text-decoration: underline;
 }
-.icon{
-    width: 10rem;
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.section > div {
+    /*flex-basis: 30%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    width: 60%;
+}
+
+.section img {
+    max-width: 100%;
+}
+
+.section .title {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    float: center;
 }
 footer{
+    font-family: sans-serif;
     width: 100%;
     background-color:#00B172 ;
     background-position: center;

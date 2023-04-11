@@ -75,6 +75,8 @@ nav ul{
     float: left;
 }
 .divs2{
+    margin: 0%;
+    padding: 7rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -105,9 +107,9 @@ section .section-title{
     flex-wrap: wrap;
     padding: 2rem;
 }
-
 .section > div {
     /*flex-basis: 30%;*/
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +119,6 @@ section .section-title{
     margin-bottom: 2rem;
     width: 60%;
 }
-
 .section img {
     max-width: 100%;
 }
@@ -129,6 +130,7 @@ section .section-title{
     align-items: flex-start;
     flex-direction: column;
     float: center;
+    color: #00B172;
 }
 footer{
     font-family: sans-serif;
